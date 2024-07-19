@@ -1,47 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Login</title>
+    <title>Smile Communication Center</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+
 
 </head>
+<style>
+
+    :root{
+        --input-color: rgb(201, 201, 201)
+    }
+
+    
+
+    .smilelogo {
+        width: 190px;
+        height: 49px;
+        align-items: center;
+        position: relative;
+        top: 50px;
+        align-items: center;
+
+    }
+
+    .backimg {
+        width: 80%;
+
+    }
+
+    #myP {
+        margin-top: 70px;
+        font-size: 13px;
+    }
+
+    #myP2 {
+        font-size: 13px;
+    }
+
+    #ik {
+        border-radius: 5px;
+        border: 1px solid var(--input-color);
+        padding: 8px;
+        width: 50%;
+
+
+
+
+    }
+    #ik::placeholder{
+        color: var(--input-color)
+    }
+
+    .forgotlink {
+        color: rgb(244, 163, 28);
+
+    }
+
+    span {
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+
+        margin-left: 135px;
+
+    }
+
+    /* .rememberme {} */
+
+    button {
+        padding: 8px;
+        width: 50%;
+        border-radius: 8px;
+        border-style: none;
+        background-color: rgb(244, 163, 28);
+        ;
+    }
+
+    .registerlink {
+        color: black;
+        list-style-type: none;
+
+    }
+
+    footer {
+        border: 1px solid green;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 13px;
+        padding-top: 25px;
+
+    }
+    .signin-btn, .middle-text{
+        width: 50%;
+    }
+
+    /* .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+
+    } */
+
+    @media (max-width:767px) {
+        #ik{
+          width: 100%;  
+        }
+        .signin-btn, .middle-text{
+            width: 100%;
+        }
+    }
+</style>
 
 <body>
-    <!-- <div class="container-md">
-        
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>CAVEAT!</strong> This is a student project and not an attemp to clone the existing site.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 
-    <div class="container">
-        <!-- Content here -->
-      </div>  -->
 
-      <!-- <div class="container-fluid">
-        ...
-      </div>  -->
-
-      <!-- <div class="container text-center">
+    <div class="main text-center">
         <div class="row">
-          <div class="col">
-            Column
-          </div>
-          <div class="col">
-            Column
-          </div>
-          <div class="col">
-            Column
-          </div>
+            <div class="col d-none d-md-block" class="firstcol">
+                <img class="w-100 h-100" src="https://smile.com.ng/pub/media/wysiwyg/login-banner.jpg" alt="logo"
+                    width="100%">
+
+
+            </div>
+
+
+
+
+
+            <div class="col-7 col-lg m-auto">
+                <img class="smilelogo" class="w-100 h-100"
+                    src="https://smile.com.ng/pub/media/logo/stores/1/smile-logo-beta.png" alt="smile logo">
+
+
+                <h2 id="myP"><b>Welcome!</b></h2>
+
+                <h4><b>Sign in to Continue</b></h4>
+                <p id="myP2">You can use your Mysmile App credentials to sign in</p>
+
+                <form class="">
+                    <input id="ik" type="text" placeholder="SmileNumber / Username"><br><br>
+
+                    <input id="ik" type="password" placeholder="Password"><br><br>
+
+                    <div class="d-flex justify-content-between align-items-center m-auto  middle-text">
+                        <div class="rememberme">
+                            <input type="checkbox" name="kaba">
+                            <label for="kaba">Remember Me</label>
+                        </div>
+
+                        <a href="" class="forgotlink">Forgot Your Password</a>
+
+                    </div>
+                    <br>
+
+                    <button class="signin-btn">SIGN IN</button>
+                    <br><br>
+
+                    <a href="" class="registerlink">Not registered yet? Register</a>
+
+                </form>
+            </div>
+
+
         </div>
-      </div> -->
 
-      <div class="container text-center" style="background: yellow;">
-        <div class="row">
-          <div class="col">
-            1 of 2
-          </div>
-          <div class="col">
-            2 of 2
-          </div>
-    
+    </div>
+
+
+    <footer>
+        <p>Company Registration No: 722728</p>
+        <p>Copyright © 2024 Smile Communications Nigeria Ltd.</p>
+    </footer>
+
+
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
